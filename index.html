@@ -2,14 +2,17 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <!-- منع التكبير العشوائي في الجوال للحفاظ على مظهر التطبيق -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title id="page-title">شاركي ساما | Sharky Sama</title>
     
+    <!-- تسريع الاتصال بالخطوط والمكتبات الخارجية -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- ملفات التصميم المنفصلة -->
     <link rel="stylesheet" href="css/security.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,11 +23,6 @@
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
-    <!-- نافذة إشعار النسخ -->
-    <div id="toast" class="toast gpu-accel">
-        <i class="fas fa-check-circle"></i> <span id="toast-text">تم نسخ رابط القسم بنجاح!</span>
-    </div>
-
     <div id="preloader">
         <div class="spinner-ring"></div>
         <div class="loader-content">
@@ -34,7 +32,6 @@
 
     <div id="progressBar"></div>
 
-    <!-- تم إزالة gpu-accel من هنا لحل مشكلة التموضع -->
     <nav id="navbar">
         <a href="#home" class="logo" id="nav-logo">شاركي <span>ساما</span></a>
         
@@ -94,7 +91,7 @@
 
     <section id="about" class="reveal opt-render">
         <div class="section-header">
-            <h2 id="about-title">من هو <span>شاركي</span>؟ <button class="share-link-btn" data-hash="about" aria-label="Copy Link"><i class="fas fa-link"></i></button></h2>
+            <h2 id="about-title">من هو <span>شاركي</span>؟</h2>
         </div>
         <div class="about-text-box gpu-accel">
             <p id="about-p1">أنا مطور وطالب في تخصص هندسة البرمجيات، أجمع بين التفكير المنطقي في بناء الأنظمة والخيال الواسع في عالم التصميم والفن الرقمي. أهتم بتطوير البوتات المتقدمة، وبناء واجهات الويب العصرية، إلى جانب ممارسة الرياضة ومتابعة ثقافة الأنمي التي تلهمني في تصاميمي.</p>
@@ -104,7 +101,7 @@
 
     <section id="skills" class="reveal opt-render">
         <div class="section-header">
-            <h2 id="skills-title">مهاراتي <span>وهواياتي</span> <button class="share-link-btn" data-hash="skills" aria-label="Copy Link"><i class="fas fa-link"></i></button></h2>
+            <h2 id="skills-title">مهاراتي <span>وهواياتي</span></h2>
         </div>
         <div class="skills-grid">
             <div class="skill-card tilt-effect gpu-accel">
@@ -132,9 +129,6 @@
     </section>
 
     <section id="partner" class="reveal opt-render">
-        <div class="section-header" style="margin-bottom: 20px;">
-            <h2 style="display: flex; justify-content: center; align-items: center; margin: 0;"><button class="share-link-btn" data-hash="partner" aria-label="Copy Link" style="margin: 0;"><i class="fas fa-link"></i></button></h2>
-        </div>
         <div class="duo-container">
             <div class="duo-avatars gpu-accel">
                 <div class="avatar-box tilt-effect gpu-accel">
@@ -156,7 +150,7 @@
 
     <section id="alia" class="reveal opt-render">
         <div class="section-header">
-            <h2 id="alia-title">مساحة <span>عليا</span> <button class="share-link-btn" data-hash="alia" aria-label="Copy Link"><i class="fas fa-link"></i></button></h2>
+            <h2 id="alia-title">مساحة <span>عليا</span></h2>
             <p id="alia-subtitle">الإبداع، التصميم، والبرمجة بروح مختلفة</p>
         </div>
         <div class="alia-profile-card gpu-accel">
@@ -178,7 +172,7 @@
 
     <section id="contact" class="reveal opt-render">
         <div class="section-header">
-            <h2 id="contact-title">تواصل <span>معي</span> <button class="share-link-btn" data-hash="contact" aria-label="Copy Link"><i class="fas fa-link"></i></button></h2>
+            <h2 id="contact-title">تواصل <span>معي</span></h2>
         </div>
         <div class="contact-grid">
             <a href="https://wa.me/601116662149" target="_blank" class="contact-card wa tilt-effect gpu-accel">
@@ -208,7 +202,8 @@
         <p id="footer-text">&copy; 2026 الموقع الرسمي للمطور <span>شاركي ساما</span>. تم البناء بشغف وإبداع.</p>
     </footer>
 
+    <!-- ملفات الجافاسكربت المنفصلة -->
     <script src="js/security.js"></script>
     <script src="js/main.js"></script>
 </body>
-</html>     
+</html>
